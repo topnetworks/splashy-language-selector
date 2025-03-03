@@ -94,12 +94,14 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Poppins', sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
   }
 }
 

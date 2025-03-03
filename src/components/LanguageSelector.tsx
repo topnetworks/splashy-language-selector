@@ -16,18 +16,18 @@ const LanguageSelector = () => {
       </div>
       
       {/* Content container with glassmorphism effect */}
-      <motion.div 
-        className="language-container relative z-10 p-8 rounded-2xl w-[90%] max-w-md"
+      <motion.div
+        className="language-container relative z-10 p-8 rounded-2xl w-[90%] max-w-xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ 
-          duration: 0.8, 
-          ease: [0.19, 1, 0.22, 1], 
-          delay: 0.2 
+        transition={{
+          duration: 0.8,
+          ease: [0.19, 1, 0.22, 1],
+          delay: 0.2
         }}
       >
         <motion.h1 
-          className="splash-heading text-2xl md:text-3xl font-light text-center mb-8"
+          className="splash-heading text-xl md:text-2xl font-normal text-center mb-8"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ 
@@ -52,16 +52,16 @@ const LanguageSelector = () => {
             whileHover={{ y: -5 }}
             className="flex flex-col items-center"
           >
-            <Link to="/es" className="block w-full">
-              <div className="flag-container rounded-lg overflow-hidden aspect-video shadow-md">
+            <a href="https://topfinanzas.com/mx" className="block w-full">
+              <div className="flag-container rounded-lg overflow-hidden aspect-video shadow-md" style={{ transform: 'scale(0.7)' }}>
                 <img 
                   src="/lovable-uploads/9338d6ac-8a45-43f4-8438-fe275c8d16a9.png" 
                   alt="Mexico Flag" 
                   className="flag-image w-full h-full object-cover"
                 />
               </div>
-              <p className="mt-3 text-center font-medium text-gray-800">Español</p>
-            </Link>
+              <p className="mt-0 text-center font-medium text-gray-800">Español</p>
+            </a>
           </motion.div>
           
           {/* English flag */}
@@ -76,16 +76,16 @@ const LanguageSelector = () => {
             whileHover={{ y: -5 }}
             className="flex flex-col items-center"
           >
-            <Link to="/en" className="block w-full">
-              <div className="flag-container rounded-lg overflow-hidden aspect-video shadow-md">
+            <a href="https://us.topfinanzas.com" className="block w-full">
+              <div className="flag-container rounded-lg overflow-hidden aspect-video shadow-md" style={{ transform: 'scale(0.7)' }}>
                 <img 
                   src="/lovable-uploads/058b89ca-0cec-466d-ade9-9053c68f3271.png" 
                   alt="USA Flag" 
                   className="flag-image w-full h-full object-cover"
                 />
               </div>
-              <p className="mt-3 text-center font-medium text-gray-800">English</p>
-            </Link>
+              <p className="mt-0 text-center font-medium text-gray-800">English</p>
+            </a>
           </motion.div>
         </div>
       </motion.div>
