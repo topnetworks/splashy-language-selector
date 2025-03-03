@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,51 @@
 
   body {
     @apply bg-background text-foreground;
+    margin: 0;
+    padding: 0;
   }
+}
+
+.flag-container {
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  will-change: transform;
+}
+
+.flag-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.flag-image {
+  transition: transform 0.5s ease;
+}
+
+.flag-container:hover .flag-image {
+  transform: scale(1.05);
+}
+
+.language-container {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.language-container:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.splash-heading {
+  background: linear-gradient(45deg, #333333, #555555);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
