@@ -1,20 +1,25 @@
-# Welcome to your Lovable project
+# Splashy Language Selector
 
-## Project info
+A stylish language selection interface developed by Top Finanzas.
 
-**URL**: https://lovable.dev/projects/0347d95c-5151-42c0-8e42-3e2a109d64ff
+## Project Overview
+
+This project provides an elegant language selection splash screen that allows users to choose between Spanish and English versions of the Top Finanzas website. The interface features a modern design with animated flags and a clean, responsive layout.
+
+## Recent Updates
+
+- Added Poppins font from Google Fonts as the site-wide typeface
+- Improved language selector container width to prevent text wrapping
+- Reduced flag sizes by 10% for better visual balance
+- Updated links to point to Top Finanzas websites:
+  - Spanish → <https://topfinanzas.com/mx>
+  - English → <https://us.topfinanzas.com>
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/0347d95c-5151-42c0-8e42-3e2a109d64ff) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
+### Use your preferred IDE
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
@@ -36,13 +41,13 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Edit a file directly in GitHub
 
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+### Use GitHub Codespaces
 
 - Navigate to the main page of your repository.
 - Click on the "Code" button (green button) near the top right.
@@ -59,11 +64,3 @@ This project is built with .
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0347d95c-5151-42c0-8e42-3e2a109d64ff) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
